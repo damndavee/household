@@ -7,6 +7,8 @@ out-tsc
 
 # dependencies
 node_modules
+android
+ios
 
 # IDEs and editors
 /.idea
