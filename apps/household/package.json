@@ -40,7 +40,9 @@
     "nativewind": "*",
     "expo-router": "*",
     "react-native-screens": "*",
-    "expo-linking": "*"
+    "expo-linking": "*",
+    "expo-doctor": "*",
+    "react-test-renderer": "*"
   },
   "devDependencies": {
     "tailwindcss": "*",

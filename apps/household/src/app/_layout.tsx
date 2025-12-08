@@ -1,8 +1,7 @@
-import "../../global.css"
+import '../../global.css';
 
 import { Stack } from 'expo-router';
-import { SafeAreaView } from 'react-native';
-import {SafeAreaProvider} from "react-native-safe-area-context";
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const RootLayout = () => {
   return (
@@ -10,6 +9,6 @@ const RootLayout = () => {
       <Stack />
     </SafeAreaProvider>
   );
-}
+};
 
 export default RootLayout;
