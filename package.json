@@ -1,6 +1,6 @@
 {
   "name": "@sys/source",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {},
   "private": true,
@@ -51,7 +51,6 @@
     "babel-jest": "^30.0.2",
     "babel-preset-expo": "~13.0.0",
     "cypress": "^15.6.0",
-    "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-cypress": "^3.5.0",
     "eslint-plugin-import": "2.31.0",

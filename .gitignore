@@ -60,7 +60,4 @@ npm-debug.*
 web-build/
 cache/
 
-# npm package-lock
-package-lock.json
-
 test-output
