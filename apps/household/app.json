@@ -1,11 +1,13 @@
 {
   "expo": {
     "name": "Household",
-    "slug": "@sys/household",
+    "slug": "household",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "@sys/household",
+    "scheme": [
+      "household"
+    ],
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
