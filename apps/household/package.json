@@ -42,7 +42,8 @@
     "expo-linking": "*",
     "expo-doctor": "*",
     "react-test-renderer": "*",
-    "expo-constants": "*"
+    "expo-constants": "*",
+    "lottie-react-native": "*"
   },
   "devDependencies": {
     "tailwindcss": "*",
