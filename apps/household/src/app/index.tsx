@@ -20,7 +20,7 @@ const RootPage = () => {
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
-      <View className="justify-center items-center flex-1 gap-4 bg-white">
+      <View className="justify-center items-center flex-1 gap-4 bg-[#FAF3E0]">
         <AnimatedLottieView
           source={require('../../assets/animations/solar_powered_house.json')}
           progress={animationProgress.current}

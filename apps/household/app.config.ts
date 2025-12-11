@@ -37,7 +37,7 @@ const config = (): ExpoConfig => ({
         imageWidth: 300,
         imageHeight: 300,
         resizeMode: 'contain',
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#FAF3E0',
       },
     ],
   ],
