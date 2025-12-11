@@ -1,0 +1,30 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  plugins: [],
+  ignorePatterns: ['**/__tests__/*', '**/mocks/*', '*config.js', '**/node_modules/*', '**/.storybook/*', '**/deplyment/*', '**build/*', '*.d.ts'],
+  extends: [],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  rules: {
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-lonely-if': 'error',
+    'no-regex-spaces': 'off',
+    'no-unused-vars': 'warn',
+    'no-useless-escape': 'off',
+    'no-var': 'error',
+    'prefer-const': 'warn',
+    'prefer-template': 'warn',
+    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx', '.js', '.jsx'] }],
+    'react/jsx-uses-react': 'off',
+    'react/no-deprecated': 'warn',
+    'react/no-unstable-nested-components': ['error', { allowAsProps: true }],
+    'react/prefer-stateless-function': 'warn',
+    'react/react-in-jsx-scope': 'off',
+  },
+};

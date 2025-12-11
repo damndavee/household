@@ -9,7 +9,6 @@
     "ios": "expo run:ios"
   },
   "dependencies": {
-    "@expo/metro-config": "*",
     "@testing-library/react-native": "*",
     "expo": "*",
     "expo-splash-screen": "*",
@@ -40,7 +39,11 @@
     "nativewind": "*",
     "expo-router": "*",
     "react-native-screens": "*",
-    "expo-linking": "*"
+    "expo-linking": "*",
+    "expo-doctor": "*",
+    "react-test-renderer": "*",
+    "expo-constants": "*",
+    "lottie-react-native": "*"
   },
   "devDependencies": {
     "tailwindcss": "*",
