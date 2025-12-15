@@ -2,7 +2,6 @@
 /// <reference types="node" />
 module.exports = {
   displayName: '@sys/household',
-  resolver: require.resolve('./jest.resolver.js'),
   preset: 'jest-expo',
   moduleFileExtensions: ['ts', 'js', 'html', 'tsx', 'jsx'],
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
@@ -13,11 +12,12 @@ module.exports = {
     '\\.[jt]sx?$': [
       'babel-jest',
       {
-        configFile: __dirname.concat('/.babelrc.js'),
+        configFile: __dirname.concat('/babel.config.js'),
       },
     ],
     '^.+\\.(bmp|gif|jpg|jpeg|mp4|png|psd|svg|webp|ttf|otf|m4v|mov|mp4|mpeg|mpg|webm|aac|aiff|caf|m4a|mp3|wav|html|pdf|obj)$':
       require.resolve('jest-expo/src/preset/assetFileTransformer.js'),
   },
+  collectCoverageFrom: ['<rootDir>/src/**/*.{ts,tsx,js,jsx}', '!<rootDir>/src/**/__tests__/**', '!<rootDir>/src/**/*.d.ts'],
   coverageDirectory: '../../coverage/apps/household',
 };

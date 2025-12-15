@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Animated, Easing, View } from 'react-native';
 import LottieView from 'lottie-react-native';
 import { Stack } from 'expo-router';
+import { Testoviron } from '../features/Testoviron';
 
 const AnimatedLottieView = Animated.createAnimatedComponent(LottieView);
 
@@ -28,6 +29,7 @@ const RootPage = () => {
           autoPlay={true}
           loop={true}
         />
+        <Testoviron />
       </View>
     </>
   );
