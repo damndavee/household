@@ -16,6 +16,9 @@ const config = (): ExpoConfig => ({
     supportsTablet: true,
     bundleIdentifier: 'com.anonymous.syshousehold',
     icon: './assets/images/icon-ios.png',
+    infoPlist: {
+      ITSAppUsesNonExemptEncryption: false,
+    },
   },
   android: {
     adaptiveIcon: {
@@ -41,6 +44,11 @@ const config = (): ExpoConfig => ({
       },
     ],
   ],
+  extra: {
+    eas: {
+      projectId: 'aaaafd35-15c4-411b-95e1-556063d7774e',
+    },
+  },
 });
 
 export default config;
