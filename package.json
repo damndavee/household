@@ -37,6 +37,7 @@
   "devDependencies": {
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.14.5",
     "@commitlint/cli": "^20.2.0",
     "@commitlint/config-conventional": "^20.2.0",
     "@eslint/compat": "^2.0.0",
@@ -48,8 +49,17 @@
     "@nx/eslint-plugin": "22.2.1",
     "@nx/expo": "22.2.1",
     "@nx/jest": "22.2.1",
-    "@nx/js": "22.2.1",
+    "@nx/js": "22.4.0",
+    "@nx/react-native": "22.4.0",
+    "@nx/rollup": "22.4.0",
     "@nx/workspace": "22.2.1",
+    "@react-native-community/cli": "~18.0.0",
+    "@react-native-community/cli-platform-android": "~18.0.0",
+    "@react-native-community/cli-platform-ios": "~18.0.0",
+    "@react-native/babel-preset": "~0.79.3",
+    "@react-native/metro-config": "~0.79.3",
+    "@rollup/plugin-url": "^8.0.2",
+    "@svgr/rollup": "^8.1.0",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
@@ -78,17 +88,34 @@
     "nx": "22.2.1",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
+    "react-test-renderer": "19.0.0",
+    "rollup": "^4.59.0",
     "tailwindcss": "^3.4.17",
     "ts-jest": "^29.4.0",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.40.0"
+    "typescript-eslint": "^8.40.0",
+    "verdaccio": "^6.0.5"
   },
   "overrides": {
     "react-test-renderer": "19.0.0"
   },
   "workspaces": [
-    "apps/*"
-  ]
+    "apps/*",
+    "libs/*"
+  ],
+  "nx": {
+    "includedScripts": [],
+    "targets": {
+      "local-registry": {
+        "executor": "@nx/js:verdaccio",
+        "options": {
+          "port": 4873,
+          "config": ".verdaccio/config.yml",
+          "storage": "tmp/local-registry/storage"
+        }
+      }
+    }
+  }
 }

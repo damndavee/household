@@ -35,6 +35,12 @@
     "**/*.js",
     "**/*.jsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "../../types/nativewind-env.d.ts"
+  ],
+  "references": [
+    {
+      "path": "../../libs/ui/tsconfig.lib.json"
+    }
   ]
 }
